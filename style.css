@@ -45,7 +45,24 @@ coin img {
     height: 100%;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
+    animation: spin-heads 3s forwards;
 }
 .tails {
     transform: rotateX(180deg);
+}
+@keyframes spin-tails {
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(1980deg);
+    }
+}
+@keyframes spin-heads {
+    0%{
+        transform: rotateX(0);
+    }
+    100%{
+        transform: rotateX(2160deg);
+    }
 }
