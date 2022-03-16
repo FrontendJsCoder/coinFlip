@@ -39,13 +39,12 @@ body {
 coin img {
     width: 145px;
 }
-.heads, .tails {
+.heads,.tails {
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
-    animation: spin-heads 3s forwards;
 }
 .tails {
     transform: rotateX(180deg);
